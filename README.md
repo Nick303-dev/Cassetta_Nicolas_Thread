@@ -8,7 +8,7 @@ Questo progetto in Java simula, tramite thread, il processo di produzione di uno
 * 4 pannelli
 * 2 cassetti
 * 1 anta
-* Maniglie
+* Maniglie 
 
 Ogni componente viene costruito in parallelo (grazie ai thread) e mostra a schermo la percentuale di completamento. Al termine della costruzione di tutte le parti, viene simulato anche l'assemblaggio finale del mobile.
 
@@ -16,7 +16,7 @@ Ogni componente viene costruito in parallelo (grazie ai thread) e mostra a scher
 Il progetto è composto da cinque classi principali:
 
 ### 1. PannelloMobile
-Estende Thread e simula la creazione di un singolo pannello del mobile, mostrando la percentuale di completamento ogni 10%.
+Estende Thread e simula la creazione di un singolo pannello del mobile, mostrando la percentuale di completamento ogni 25%.
 
 ### 2. CassettoMobile
 Estende Thread e simula la creazione di un cassetto del mobile, anch'esso con aggiornamenti di avanzamento.
@@ -24,10 +24,10 @@ Estende Thread e simula la creazione di un cassetto del mobile, anch'esso con ag
 ### 3. AntaMobile
 Estende Thread e simula la creazione dell'anta del mobile, mostrando a schermo la percentuale di completamento.
 
-### 4. ManigliaeMobile
+### 4. ManigliaMobile
 Estende Thread e simula la creazione delle maniglie del mobile, con aggiornamenti progressivi.
 
-### 5. Processo
+### 5. Mobile
 Contiene il metodo main e gestisce:
 * la richiesta del numero di mobili da produrre,
 * l'avvio in parallelo dei thread delle varie parti,
@@ -38,11 +38,10 @@ Il programma mostrerà a schermo l'avanzamento della costruzione di ogni parte e
 
 ## Note
 * Ogni parte del mobile (pannello, cassetto, anta, maniglie) viene eseguita in thread separati per simulare una produzione parallela.
-* Puoi modificare i tempi di Thread.sleep() per velocizzare o rallentare la simulazione.
 * I tempi di produzione sono differenziati per ogni componente per rendere la simulazione più realistica:
     - Pannelli: 750ms per step
     - Cassetti: 500ms per step
-    - Anta: 750ms per step
+    - Anta: 500ms per step
     - Maniglie: 300ms per step
 
 ## Esempio di output
