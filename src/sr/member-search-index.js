@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Mobile","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"<Unnamed>","c":"ManigliaMobile","l":"ManigliaMobile(int)","u":"%3Cinit%3E(int)"},{"p":"<Unnamed>","c":"Mobile","l":"Mobile()","u":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"ManigliaMobile","l":"run()"}];updateSearchResults();
